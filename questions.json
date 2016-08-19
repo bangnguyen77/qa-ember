@@ -1,0 +1,21 @@
+{ "questions": [
+  {
+    "tag": "Geography",
+    "author": "Alex",
+    "date": "2015-03-25",
+    "content": "What is the capital of the US?"
+  },
+  {
+    "tag": "Sport",
+    "author": "Brian",
+    "date": "2015-03-26",
+    "content": "What sports event is happening in Rio De Janeiro?"
+  },
+  {
+    "tag": "Technology",
+    "author": "Carl",
+    "date": "2015-03-27",
+    "content": "What company produces Iphone?"
+  }
+  ]
+}

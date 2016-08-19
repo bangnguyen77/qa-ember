@@ -2,5 +2,12 @@
 
 <p>I hope you enjoy exploring the message board.</p>
 
+<ul>
+  {{#each model as |question|}}
+    <h3>{{question.content}}</h3>
+    <h4>{{question.author}}</h4>
+  {{/each}}
+</ul>
+
 {{#link-to 'about'}}About{{/link-to}} |
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
