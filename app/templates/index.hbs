@@ -1,13 +1,21 @@
-<h1>Welcome to Message Board</h1>
+<div class='greeting'>
+  <h1>Welcome to Message Board</h1>
 
-<p>I hope you enjoy exploring the message board.</p>
+  <p>I hope you enjoy exploring the message board.</p>
+</div>
 
-<ul>
-  {{#each model as |question|}}
-    {{#link-to 'question' question.id}}<h3>{{question.content}}</h3>{{/link-to}}
-    {{#link-to 'question' question.id}}<h4>{{question.author}}</h4>{{/link-to}}
-  {{/each}}
-</ul>
+<div class="questionList">
+  <ul>
+    {{#each model as |question|}}
+      {{#link-to 'question' question.id}}<h3>{{question.content}}</h3>{{/link-to}}
+      {{#link-to 'question' question.id}}<h4>{{question.author}}</h4>{{/link-to}}
+    {{/each}}
+  </ul>
+</div>
+
+<div class="">
+  {{add-question save1="save3"}}
+</div>
 
 {{#link-to 'about'}}About{{/link-to}} |
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
