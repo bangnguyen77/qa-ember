@@ -9,6 +9,7 @@
     {{#each model as |question|}}
       {{#link-to 'question' question.id}}<h3>{{question.content}}</h3>{{/link-to}}
       {{#link-to 'question' question.id}}<h4>{{question.author}}</h4>{{/link-to}}
+      {{edit-question edit1="edit3"}}
     {{/each}}
   </ul>
 </div>
