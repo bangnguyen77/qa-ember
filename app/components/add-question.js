@@ -7,7 +7,7 @@ export default Ember.Component.extend({
       this.set('addNewQuestion', true);
     },
 
-    save1() {
+    saveQuestion1() {
       var params = {
         tag: this.get('tag'),
         author: this.get('author'),
@@ -15,7 +15,7 @@ export default Ember.Component.extend({
         content: this.get('content'),
       };
       this.set('addNewQuestion', false);
-      this.sendAction('save1', params);
+      this.sendAction('saveQuestion1', params);
     }
   }
 });

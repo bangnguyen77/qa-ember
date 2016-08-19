@@ -6,7 +6,7 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    saveAnswer3(params) {
+    saveAnswer2(params) {
       var newAnswer = this.store.createRecord('answer', params);
       newAnswer.save();
       this.transitionTo('question');

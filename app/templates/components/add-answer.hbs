@@ -3,11 +3,6 @@
   <div>
     <form>
       <div class="form-group">
-        <label for="tag">Type of Questions:</label>
-        {{input value=tag id="tag"}}
-      </div>
-
-      <div class="form-group">
         <label for="author">Author:</label>
         {{input value=author id="author"}}
       </div>
@@ -19,7 +14,7 @@
 
       <div class="form-group">
         <label for="content">Answers:</label>
-        {{input value=content id="content"}}
+        {{textarea cols="80" rows="6" value=content id="content" placeholder=question.content}}
       </div>
 
       <button {{action 'saveAnswer1'}}>Save</button>

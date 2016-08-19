@@ -15,7 +15,7 @@ export default Ember.Component.extend({
         content: this.get('content'),
       };
       this.set('editQuestionForm', false);
-      this.sendAction('edit1', params);
+      this.sendAction('edit1', question, params);
     }
   }
 });
